@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=UTG Emu
+Comment=Administrador de Virtualizacion UTG
+Exec=utg-emu
+Icon=utilities-terminal
+Terminal=false
+Categories=System;Emulator;

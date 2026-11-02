@@ -1,0 +1,8 @@
+Package: utg-emu
+Version: 1.0.0
+Section: utils
+Priority: optional
+Architecture: amd64
+Maintainer: Ulises Toriche Galvan <ulisestgtorichegalvan@gmail.com>
+Description: UTG Emu - Administrador de Virtualizacion Estilo Virt-Manager para ARM y AMD.
+ Incluye soporte para autobusqueda de sistemas operativos en la nube y emulacion KVM/QEMU.

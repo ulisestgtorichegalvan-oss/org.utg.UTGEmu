@@ -1,0 +1,28 @@
+id: org.utg.UTGEmu
+runtime: org.gnome.Platform
+runtime-version: '46'
+sdk: org.gnome.Sdk
+command: utg-emu
+finish-args:
+  - --share=ipc
+  - --socket=x11
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --device=dri
+  - --allow=multiarch
+  - --device=kvm
+  - --filesystem=host
+  - --share=network
+
+modules:
+  - name: utg-emu
+    buildsystem: simple
+    build-commands:
+      - mkdir -p /app/bin
+      - mkdir -p /app/share/applications
+      - gcc main.c $(pkg-config --cflags --libs gtk4) -o /app/bin/utg-emu
+      # Esto instala el acceso directo de forma automática en la caja de apps global
+      - install -D org.utg.UTGEmu.desktop /app/share/applications/org.utg.UTGEmu.desktop
+    sources:
+      - type: dir
+        path: src

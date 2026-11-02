@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=UTG Emu
+Comment=Administrador de Virtualización Estilo Virt-Manager para ARM y AMD
+Exec=utg-emu
+Icon=org.utg.UTGEmu
+Terminal=false
+Categories=System;Emulator;
+X-Flatpak-Tags=Graphical;
