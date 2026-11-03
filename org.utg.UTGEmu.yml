@@ -20,9 +20,11 @@ modules:
     build-commands:
       - mkdir -p /app/bin
       - mkdir -p /app/share/applications
+      - mkdir -p /app/share/metainfo
       - gcc main.c $(pkg-config --cflags --libs gtk4) -o /app/bin/utg-emu
-      # Esto instala el acceso directo de forma automática en la caja de apps global
       - install -D org.utg.UTGEmu.desktop /app/share/applications/org.utg.UTGEmu.desktop
+      # Instala los metadatos requeridos por Flathub
+      - install -D org.utg.UTGEmu.metainfo.xml /app/share/metainfo/org.utg.UTGEmu.metainfo.xml
     sources:
       - type: dir
         path: src

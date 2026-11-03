@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.utg.UTGEmu</id>
+  <metadata_license>MIT</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>UTG Emu</name>
+  <summary>Administrador de Virtualización y Emulación para ARM y AMD</summary>
+  <description>
+    <p>
+      UTG Emu es un gestor avanzado de máquinas virtuales basado en ventanas gráficas GTK 4. 
+      Permite emular sistemas operativos completos para arquitecturas ARM y AMD utilizando QEMU bajo el capó.
+    </p>
+    <p>
+      Características principales: Autobúsqueda inteligente de imágenes de sistemas operativos (.iso, .img, .bin) 
+      en la nube filtrando estrictamente por la arquitectura que necesitas.
+    </p>
+  </description>
+  <launchable type="desktop-id">org.utg.UTGEmu.desktop</launchable>
+  <developer_name>Ulises Toriche Galvan</developer_name>
+  <url type="homepage">https://github.com</url>
+  <content_rating type="oars-1.1" />
+  <releases>
+    <release version="1.0.0" date="2026-11-02"/>
+  </releases>
+</component>
